@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- This is the code for navigation bar 1 -->
+<div id="Nav1" class="center">
+	<ul<ul id="Nav1">
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+  <li><a href="myaccount.html">My Account</a></li>
+  <li><a href="logincreateaccount.html"> Login/Create Account</a></li>
+</ul>
+</div>
+
+
+<!-- This is the code for navigation bar 2 -->
+<div id="Nav2" class="center">
+	<ul<ul id="Nav2">
+  <li><a href="products.html">Products</a></li>
+<div class="search-container">
+    <form action="">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</ul>
+</div>
+<!-- This is the code for navigation bar 2 -->
+<style>
+#myHeader {
+  background-color: #00b300;
+  color: black;
+  text-align: center;
+} 
+</style>
+<h1 id="myHeader">USE CODE "FCCDELIVERY" FOR FREE DELIVERY</h1>
+<!-- Cars R Us Title -->
+<div style="font-family:Copperplate;"> 
+  <h1 style="text-align:center;class="display-4">The Home to Technology</strong></h1>
+</div>
+<body>
+      </p>
+        <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
+        </button>
+		
+
+    
+<!--Adding the logo-->
+
+<div class="container">
+  <img src="resources/phonehub.png" alt="Phone Hub" width="1000" height="100">
+  <div class="topleft"></div>
+</div>
+
+<!-- adding the video  -->
+<html> 
+<body> 
+
+<video width="1000" controls>
+  <source src="resources/cellphone.mp4" type="video/mp4">
+  <source src="resources/cellphone.mp4" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="Resources/huawei.png" style="width:30%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Resources/note10.png" style="width:30%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Resources/iphone11.jpg" style="width:30%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="Resources/huaweip30.jpg" style="width:30%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+<!-- Slideshow container -->
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
